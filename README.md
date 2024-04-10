@@ -1,8 +1,8 @@
-# Zero1 Labs Keymarket
+# Zero1 Labs Keymaker
 
 ## Overview
 
-Zero1 Labs keymarket repository is a comprehensive, up-to-date collection of information about several thousands (!) of crypto tokens.
+Zero1 Labs keymaker repository is a comprehensive, up-to-date collection of information about several thousands (!) of crypto tokens.
 
 [Zero1 Labs](https://z1labs.ai/) uses token logos from this source, alongside a number of other projects.
 
@@ -11,7 +11,7 @@ For every token a logo and optional additional information is available (such da
 
 Such a large collection can be maintained only through a community effort, so _feel free to add your token_.
 
-## How to add tool to keymarket
+## How to add tool to keymaker
 
 Please note that __brand new tokens are not accepted__,
 the projects have to be sound, with information available, and __non-minimal circulation__

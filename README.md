@@ -26,6 +26,10 @@
 
 1. Add documentation for your tool to the <code>README.md</code> file in the tools/<code>your-tool-name</code> folder.
 
+
+### Developer documentation
+[How to build a tool for the Keymaker platform use template](https://docs.z1labs.ai/ecosystem-overview/keymaker-introduction)
+
 ### Testing your tool
 
 1. Make sure your tool works as expected.

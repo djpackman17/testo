@@ -41,6 +41,8 @@
 1. Commit your changes: <br/>
    ```
    git add .
+   ```
+   ```
    git commit -m "Your commit description"
     ```
 2. Push changes to your fork repository: <br/>

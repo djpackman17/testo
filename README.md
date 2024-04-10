@@ -37,7 +37,7 @@
 1. Commit your changes: <br/>
    <code>git add .</code> <br/>
    <code>git commit -m "Your commit description"</code> <br/><br/>
-2. Create a Pull Request: <br/>
+2. Push changes to your fork repository: <br/>
    <code>git push origin main</code><br/><br/>
 
 3. <b>Go to GitHub</b> and navigate to your fork of the repository.

@@ -19,12 +19,12 @@
 
 ### Configure your environment
 
-1. Rename the env.example file to <code>.env</code>.
+1. Rename the env.example file to `.env`.
 2. Fill in the environment variables.
 
 ### Documentation your tool
 
-1. Add documentation for your tool to the <code>README.md</code> file in the tools/<code>your-tool-name</code> folder.
+1. Add documentation for your tool to the `README.md` file in the tools/<code>your-tool-name</code> folder.
 
 
 ### Developer documentation
@@ -39,10 +39,14 @@
 ### After your tool is tested and ready to use:
 
 1. Commit your changes: <br/>
-   <code>git add .</code> <br/>
-   <code>git commit -m "Your commit description"</code> <br/><br/>
+   ```
+   git add .
+   git commit -m "Your commit description"
+    ```
 2. Push changes to your fork repository: <br/>
-   <code>git push origin main</code><br/><br/>
+   ```
+   git push origin main
+   ```
 
 3. <b>Go to GitHub</b> and navigate to your fork of the repository.
 

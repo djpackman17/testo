@@ -24,7 +24,7 @@
 
 ### Documentation your tool
 
-1. Add documentation for your tool to the README.md file in the tools/<code>your-tool-name</code> folder.
+1. Add documentation for your tool to the <code>README.md</code> file in the tools/<code>your-tool-name</code> folder.
 
 ### Testing your tool
 

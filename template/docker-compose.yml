@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+  app:
+    container_name: ${APP_NAME}
+    build:
+      context: ./docker
+      args:
+        EXAMPLE_ARGS: 6.2.2
+    volumes:
+      - ./app:/app:rw
+    ports:
+#      - '172.17.0.1:3001:3000'
+      - '3000:3000'
+    environment:
+      - APP_ENV=${APP_ENV}
+      - APP_NAME=${APP_NAME}

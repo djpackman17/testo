@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  app:
+    container_name: ${APP_NAME}
+    build:
+      context: ./docker
+      dockerfile: Dockerfile
+    networks:
+      - apps-z1labs-network
+    volumes:
+      - ./app:/app:rw
+    ports:
+      - '172.17.0.1:3000:3000'
+      - '3000:3000'
+    environment:
+      - APP_ENV=${APP_ENV}
+      - APP_NAME=${APP_NAME}
+networks:
+  apps-z1labs-network:
+#    external: true
+#    name: apps-z1labs-network

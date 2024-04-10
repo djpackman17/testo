@@ -1,0 +1,8 @@
+{
+    "icon": "<url png or svg file>",
+    "title": "<Title tool>",
+    "description": "<Description tool>",
+    "website": "<url>",
+    "x": "<url>",
+    "github": "<url>",
+}

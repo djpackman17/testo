@@ -1,8 +1,16 @@
 {
-    "icon": "<url png or svg file>",
+    "logo": "<url>",
     "title": "<Title tool>",
     "description": "<Description tool>",
-    "website": "<url>",
-    "x": "<url>",
-    "github": "<url>",
+    "toolCategory": "<For example: Data,Token,ERC20; Available Categories: Automation, Cryptography, Data, ERC20, Security, Token, Utility>",
+    "toolType": "<For example: DAO Tools, DeFi Tools; Available Types: Automation Tools, DAO Tools, DeFi Tools, Developer Tools, Security Tools>",
+    "socials":{
+        "website": "<url>",
+        "x": "<url>",
+        "discord": "<url>",
+        "telegram": "<url>",
+        "medium": "<url>",
+        "github": "<url>",
+        "reddit": "<url>",
+    }
 }

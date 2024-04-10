@@ -11,60 +11,57 @@
 1. Go to the GitHub repository: URL GitHub repository and click the "Fork" button.
 2. This will create a copy of the repository in your own GitHub account.
 
-### Create a new utility
+### Create a new tool
 
-1. Go to the template folder.
-2. Copy the template folder to the tools folder.
-3. Rename the tools/template folder to tools/your-tool-name.
-4. All further development of your utility will be done in the tools/your-tool-name folder.
+1. Copy the template folder to the <code>tools</code> folder.
+2. Rename the tools/<code>template</code> folder to tools/<code>your-tool-name</code>.
+3. All further development of your tool will be done in the tools/<code>your-tool-name</code> folder.
 
 ### Configure your environment
 
-1. Copy the env.example file to .env.
+1. Rename the env.example file to <code>.env</code>.
 2. Fill in the environment variables.
 
-### Document your utility
+### Documentation your tool
 
-1. Add documentation for your utility to the README.md file.
+1. Add documentation for your tool to the README.md file in the tools/<code>your-tool-name</code> folder.
 
-### Testing your utility
+### Testing your tool
 
-1. Make sure your utility works as expected.
+1. Make sure your tool works as expected.
 2. Test it with different inputs and scenarios.
 3. Fix any bugs that you find.
 
-### After your utility is tested and ready to use:
+### After your tool is tested and ready to use:
 
-1. Create a branch for your utility: <br/>
-   <b><code>git checkout -b your-tool-name</code></b><br/><br/>
-2. Commit your changes: <br/>
+1. Commit your changes: <br/>
    <code>git add .</code> <br/>
-   <code>git commit -m "Add your-tool-name"</code> <br/><br/>
-3. Create a Pull Request: <br/>
-   <code>git push origin your-tool-name</code><br/><br/>
+   <code>git commit -m "Your commit description"</code> <br/><br/>
+2. Create a Pull Request: <br/>
+   <code>git push origin main</code><br/><br/>
 
-4. <b>Go to GitHub</b> and navigate to your fork of the repository.
+3. <b>Go to GitHub</b> and navigate to your fork of the repository.
 
-5. Click the "Pull Request" button.
+4. Click the "Pull Request" button.
 
-6. In the "Base branch" field, select <code>main</code>.
+5. In the "Base branch" field, select <code>main</code>.
 
-7. In the "Compare branch" field, select <code>your-tool-name</code>.
+6. In the "Compare branch" field, select <code>your-tool-name</code>.
 
-8. Write a Pull Request description that describes your utility.
+7. Write a Pull Request description that describes your tool.
 
-9. Click the "Create pull request" button.
+8. Click the "Create pull request" button.
 
 ### Wait for review and merge:
 
 - A maintainer of the repository will review your Pull Request.
 - If everything is ok, the Pull Request will be merged into the main branch (main).
-- Your utility will be available on the Keymaker platform.
+- Your tool will be available on the Keymaker platform.
 
 
 ### Important:
 
-- Make sure your utility is tested and meets all requirements.
+- Make sure your tool is tested and meets all requirements.
 - Write a clear and concise Pull Request description.
 - Be patient, as Pull Request review may take some time.
 
@@ -82,7 +79,7 @@ tool.webmanifest</b>:
     - File Extension: without extension
     - File Name: <b>tool.webmanifest</b>
     - Required fields:
-        - <b>logo</b>: logo tool
+        - <b>logo</b>: url file
         - <b>title</b>: name of the tool
         - <b>description</b>: description of the tool
         - <b>toolCategory</b>: category of the tool

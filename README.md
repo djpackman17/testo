@@ -1,120 +1,111 @@
-# Zero1 Labs Keymaker
+# Keymaker Developer Guide
 
-## Overview
+Keymaker is an open platform designed to facilitate the creation and access of decentralized AI (DeAI) applications. It combines over 50+ multi-modal DeAI tools, both proprietary and community-contributed, to streamline the development process for DeAI Apps. 
 
-[Keymaker Introduction](https://docs.z1labs.ai/ecosystem-overview/keymaker-introduction)
+Read more about [Keymaker](https://docs.z1labs.ai/ecosystem-overview/keymaker-introduction#63fa096dd2114da7ac3cc1df232341fb)
 
-## How to start build
 
-### Fork the repository
+## How to Start Building Your Keymaker Tool
 
-1. Go to the GitHub repository: URL GitHub repository and click the "Fork" button.
-2. This will create a copy of the repository in your own GitHub account.
+This guide outlines the process for starting the development of a new tool within Keymaker specifications while using a GitHub repository as a basis. Follow these steps to set up your environment and begin development.
 
-### Create a new tool
+Step 1: Fork the Repository
+- Navigate to the Repository: Go to the specified GitHub repository URL.
+- Fork the Repository: Click the "Fork" button. This action creates a copy of the repository in your GitHub account, allowing you to develop your tool independently.
 
-1. Copy the template folder to the <code>tools</code> folder.
-2. Rename the tools/<code>template</code> folder to tools/<code>your-tool-name</code>.
-3. All further development of your tool will be done in the tools/<code>your-tool-name</code> folder.
+Step 2: Create a New Tool
+- Copy the Template: Navigate to the tools folder within the repository.
+- Duplicate the Template Folder: Copy the template folder located within.
+- Rename the Folder: Rename the duplicated template folder to `tools/your-tool-name`, where `your-tool-name` is the name you choose for your tool.
 
-### Configure your environment
+Step 3: Configure Your Environment
+- Rename Environment File: Locate the `env.example` file and rename it to `.env`.
+- Set Environment Variables: Open the `.env` file and fill in the required environment variables according to your tool's needs.
 
-1. Rename the env.example file to `.env`.
-2. Fill in the environment variables.
+Step 4: Document Your Tool
+- Navigate to Your Tool's Folder: Go to the `tools/your-tool-name` folder.
+- Edit README.md: Add documentation for your tool in the `README.md` file. Ensure that the documentation covers the purpose, usage, and configuration of your tool clearly.
 
-### Documentation your tool
+Step 5: Test Your Tool
+- Conduct Initial Testing: Test your tool with various inputs and scenarios to ensure it works as expected.
+- Debug and Fix Issues: Identify and fix any bugs or issues that arise during testing. This may involve adjusting code, configuration, or documentation.
 
-1. Add documentation for your tool to the `README.md` file in the tools/<code>your-tool-name</code> folder.
-
-### Testing your tool
-
-1. Make sure your tool works as expected.
-2. Test it with different inputs and scenarios.
-3. Fix any bugs that you find.
-
-### After your tool is tested and ready to use:
-
-1. Commit your changes: <br/>
+Step 6: Commit Your Changes
+- From the terminal or command prompt, navigate to your tool's directory within the forked repository.
+- Run the following commands to stage your changes:<br/>
    ```
    git add .
    ```
+- and commit your changes:<br/>
    ```
    git commit -m "Your commit description"
     ```
-2. Push changes to your fork repository: <br/>
+- Push changes to your fork repository: <br/>
    ```
    git push origin main
    ```
+Follow steps 7 to 8 to submit your tool: 
 
-3. <b>Go to GitHub</b> and navigate to your fork of the repository.
+Step 7: Create a Pull Request
+- Go to GitHub and navigate to your fork of the repository.
+- Click the "Pull Request" button.
+- Ensure the "Base branch" is set to main.
+- In the "Compare branch" dropdown, select your-tool-name.
+- Fill in a detailed and clear description of your tool for the Pull Request.
+- Click "Create pull request" to submit your contribution for review.
 
-4. Click the "Pull Request" button.
+Step 8: Review and Merge
+- Wait for a repository maintainer to review your Pull Request. This process may take some time.
+- If your contribution meets all requirements and passes review, the maintainer will merge your Pull Request into the main branch.
+- Once merged, your tool will be available on the Keymaker platform.
 
-5. In the "Base branch" field, select <code>main</code>.
+<b>Important Notes</b>
+- Ensure your tool is thoroughly tested and adheres to all specified requirements.
+- Write a clear and concise description when submitting your Pull Request.
+- Be patient during the Pull Request review process, as it can take some time for maintainers to evaluate your contribution.
 
-6. In the "Compare branch" field, select <code>your-tool-name</code>.
+## Requirements for Building a Keymaker Tool
 
-7. Write a Pull Request description that describes your tool.
+To ensure a smooth submission process for your tool to the repository, follow this clear and detailed step-by-step guide on preparing the necessary assets and information file (**tool.webmanifest**). 
 
-8. Click the "Create pull request" button.
+These requirements are crucial for maintaining consistency and quality across the repository's contents.
 
-### Wait for review and merge:
+Preparing Your Tool for Submission
 
-- A maintainer of the repository will review your Pull Request.
-- If everything is ok, the Pull Request will be merged into the main branch (main).
-- Your tool will be available on the Keymaker platform.
+Part 1: Logo Specifications
+- Format: Ensure the logo is in PNG format. Note that .PNG (uppercase extension) is considered invalid and should be .png (lowercase).
+- File Name: The logo file should be named logo.png.
+- Dimensions: The image should be 256 pixels by 256 pixels.
+- Background: A transparent background is preferred to ensure compatibility with different backgrounds where the logo might be displayed.
 
+Part 2: Creating the Tool Information File
 
-### Important:
+File Specifications:
+- File Extension: The tool information file should have no file extension.
+- File Name: The file should be named tool.webmanifest.
 
-- Make sure your tool is tested and meets all requirements.
-- Write a clear and concise Pull Request description.
-- Be patient, as Pull Request review may take some time.
+Required Fields:
+- Logo: The URL to the logo file. Ensure this URL is accessible and correctly points to the logo.png you've prepared.
+- Title: The name of your tool. This should be concise yet descriptive.
+- Description: A brief description of what your tool does and its key features. Keep it clear and informative.
+- toolCategory: The category your tool falls under. This helps users find your tool based on its functionality.
+- toolType: The type of your tool, providing further specificity beyond the general category.
 
-## Requirements for building tool
+Social Fields:
+- Website: The main website or landing page of your tool.
+- X: A custom field for a platform-specific link. Replace X with the appropriate platform name if needed.
+- Discord: The Discord community link for your tool.
+- Telegram: The Telegram channel or group link for your tool.
+- Medium: The Medium page link, if your tool publishes articles or announcements there.
+- Github: The GitHub repository link for your tool, allowing users to explore the code or contribute.
+- Reddit: The Reddit community or page link for discussions related to your tool.
 
-Before submitting a tool to this repository, we recommend you have the following information handy in file <b>
-tool.webmanifest</b>:
+Final Steps Before Submission
+- Review and Validate: Before submission, review your tool.webmanifest file and the logo to ensure all information is accurate and meets the specified requirements.
+- Testing: It's recommended to test the accessibility of the URLs provided in the **tool.webmanifest** file, especially the logo URL, to ensure they are reachable and correctly display the content.
 
-- Logo field
-    - File Extension: png (Uppercase PNG is considered invalid)
-    - File Name: logo.png
-    - Size: 256px by 256px
-    - Background: Preferably transparent
-- Token information file
-    - File Extension: without extension
-    - File Name: <b>tool.webmanifest</b>
-    - Required fields:
-        - <b>logo</b>: url file
-        - <b>title</b>: name of the tool
-        - <b>description</b>: description of the tool
-        - <b>toolCategory</b>: category of the tool
-        - <b>toolType</b>: type of the tool
-    - Socials fields:
-        - <b>website</b>: link to the tool website
-        - <b>x</b>: link to the tool x
-        - <b>discord</b>: link to the tool discord
-        - <b>telegram</b>: link to the tool telegram
-        - <b>medium</b>: link to the tool medium
-        - <b>github</b>: link to the tool github
-        - <b>reddit</b>: link to the tool reddit
+By following these steps and adhering to the specifications provided, your tool will be well-prepared for submission to the repository, ensuring a smooth integration process and enhancing its discoverability and usage within the community.
 
 ## Developer documentation
 
-[How to build a tool for the Keymaker platform use template](https://docs.z1labs.ai/ecosystem-overview/keymaker-introduction)
-
-## Disclaimer
-
-Zero1 Labs team allows anyone to submit new assets to this repository. However, this does not mean that we are in direct
-partnership with all of the projects.
-
-Zero1 Labs team will reject projects that are deemed as scam or fraudulent after careful review.
-Zero1 Labs team reserves the right to change the terms of tools submissions at any time due to changing market
-conditions, risk of fraud, or any other factors we deem relevant.
-
-Additionally, spam-like behavior, including but not limited to mass distribution of tokens to random addresses will
-result in the asset being flagged as spam and possible removal from the repository.
-
-## License
-
-The scripts and documentation in this project are released under the [MIT License](LICENSE)
+[How to build a tool for the Keymaker platform use template](https://docs.z1labs.ai/ecosystem-overview/)
